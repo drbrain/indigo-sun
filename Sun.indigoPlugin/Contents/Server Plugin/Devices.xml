@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Devices>
+  <Device type="custom" id="Sun">
+    <Name>Sun</Name>
+    <ConfigUI>
+      <Field type="textfield" id="updateInterval" defaultValue="4">
+        <Label>Update interval (minutes)</Label>
+      </Field>
+      <Field type="label" id="updateIntervalLabel">
+        <Label>In 4 minutes the sun has ~1 degree change of azimuth</Label>
+      </Field>
+    </ConfigUI>
+    <States>
+      <State id="altitude" readonly="true">
+        <ValueType>Number</ValueType>
+        <TriggerLabel>Altitude</TriggerLabel>
+        <TriggerLabelPrefix>Sun at altitude</TriggerLabelPrefix>
+        <ControlPageLabel>Altitude</ControlPageLabel>
+        <ControlPageLabelPrefix>Sun at altitude</ControlPageLabelPrefix>
+      </State>
+      <State id="azimuth" readonly="true">
+        <ValueType>Number</ValueType>
+        <TriggerLabel>Azimuth</TriggerLabel>
+        <TriggerLabelPrefix>Sun at azimuth</TriggerLabelPrefix>
+        <ControlPageLabel>Azimuth</ControlPageLabel>
+        <ControlPageLabelPrefix>Sun at azimuth</ControlPageLabelPrefix>
+      </State>
+    </States>
+  </Device>
+</Devices>
